@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Google Search</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="home-page">
+  <nav class="top-nav" aria-label="Main navigation">
+    <a href="images.html">Images</a>
+    <a href="advanced.html">Advanced Search</a>
+  </nav>
+  <main class="home-main">
+    <div class="wordmark" aria-label="Google"><span class="blue">G</span><span class="red">o</span><span class="yellow">o</span><span class="blue">g</span><span class="green">l</span><span class="red">e</span></div>
+    <form class="search-form" action="https://www.google.com/search" method="get">
+      <label class="visually-hidden" for="query">Search</label>
+      <div class="search-box">
+        <svg class="search-icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.8" cy="10.8" r="6.8"></circle><path d="m16 16 5 5"></path></svg>
+        <input id="query" type="text" name="q" autocomplete="off" autofocus>
+      </div>
+      <div class="search-actions">
+        <input type="submit" value="Google Search">
+        <button type="submit" name="btnI" value="1">I'm Feeling Lucky</button>
+      </div>
+    </form>
+  </main>
+  <footer class="footer"><span>Made for CS50 Web — Project 0</span></footer>
+</body>
+</html>
