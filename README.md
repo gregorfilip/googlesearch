@@ -1,111 +1,18 @@
 Citace a využití umělé inteligence
-
 GitHub. (2026). GitHub Copilot [AI asistent ve Visual Studio Code].
-
-Při úpravách projektu CS50 Web – Project 0: Search jsem využil GitHub Copilot jako AI asistenta. Pomohl mi upravit styly formulářové stránky, doplnit navigaci, přidat HTML a CSS validační odznaky a opravit upozornění validátoru. Návrhy jsem následně zapracoval do souborů projektu.
-
-## Prompty a provedené úpravy
-
-Níže jsou v chronologickém pořadí uvedena všechna zadání z této konverzace, včetně dodaných kódů a chybových hlášení. Drobné překlepy v běžném textu jsou zachovány.
-
-1. **Styly formuláře**
-
-   > udělej mi css styly na formular a dej je to styles.css
-
-   Doplnil jsem styly formulářových polí, popisků, výběrů, tlačítek, rozložení, patičky a responzivního zobrazení. Opravil jsem také odkaz na `styles.css` v `formular.html`.
-
-2. **Odkaz z Google stránky na formulář**
-
-   > a das tam úrosim jesre odkaz, at se z googlu dostanu na ty formulare?
-
-   Do navigace v `index.html` jsem přidal odkaz na `formular.html`.
-
-3. **CSS validační odznak na každé stránce**
-
-   > dej tuto validaci na kazdou stranku a kdyz uz tam nekdew je, nahrad  ji timto
-
-   ```html
-   <p>
-       <a href="https://gregorfilip.github.io/googlesearch/">
-           <img style="border:0;width:88px;height:31px"
-                src="https://jigsaw.w3.org/css-validator/images/vcss-blue"
-                alt="Ověřit CSS!" />
-       </a>
-   </p>
-   ```
-
-   Přidal jsem odznak na všechny čtyři HTML stránky a nahradil jím předchozí CSS validaci.
-
-4. **Oprava chyby přístupnosti**
-
-   > 1. **Error**: The `aria-label` attribute must not be specified on any `div` element unless the element has a `role` value other than `caption`, `code`, `deletion`, `emphasis`, `generic`, `insertion`, `paragraph`, `presentation`, `strong`, `subscript`, or `superscript`.
-   >
-   > From line 16, column 5; to line 16, column 46
-   >
-   > `ain">↩    <div class="wordmark" aria-label="Google"><span `
-   >
-   > oprav prosím tuto vhybu
-
-   K wordmarkům na hlavní a obrázkové stránce jsem doplnil `role="img"` a popisky.
-
-5. **Odstranění koncových lomítek z prázdných elementů**
-
-   > 1. **Info**: Trailing slash on void elements [has no effect](https://github.com/validator/validator/wiki/Markup-%C2%BB-Void-elements#trailing-slashes-in-void-element-start-tags-do-not-mark-the-start-tags-as-self-closing) and [interacts badly with unquoted attribute values](https://github.com/validator/validator/wiki/Markup-%C2%BB-Void-elements#trailing-slashes-directly-preceded-by-unquoted-attribute-values).
-   >
-   > From line 29, column 231; to line 29, column 354
-   >
-   > `esearch/"><img style="border:0;width:88px;height:31px" src="https://jigsaw.w3.org/css-validator/images/vcss-blue" alt="Ověřit CSS!" /></a></` i toto prosim
-
-   Odstranil jsem koncová lomítka z validačních obrázků.
-
-6. **HTML validace na všech stránkách**
-
-   > pridej jeste tuto validaci na html, popripadme existujici timhle nahrad
-
-   Po upřesnění jsem použil standardní W3C HTML Validator. Odkaz na každé stránce směřuje na validaci příslušného HTML souboru.
-
-7. **Grafický HTML odznak vedle CSS odznaku**
-
-   > to obereni htlml ale udelej stejne jako obrazekm u css, a vymen stavajici veci timto + dej ikonky  alicdace ccs i html k sobe
-
-   Textové odkazy jsem nahradil grafickým HTML odznakem a umístil jej vedle CSS odznaku.
-
-8. **Použití dodaného obrázku HTML odznaku**
-
-   > tento obrazek vymen za ten sta vajici u html vsude
-
-   ```html
-   <img src="https://www.w3.org/Icons/valid-html401" alt="Ověřit HTML!" style="border:0;width:88px;height:31px">
-   ```
-
-   Dodaný obrázek jsem použil na všech stránkách a ponechal odkaz na HTML validátor konkrétní stránky.
-
-9. **Změna CSS validačního odznaku**
-
-   > tohle zaaam dej jako validaci na css
-
-   ```html
-   <a href="https://jigsaw.w3.org/css-validator/validator?uri=https://gregorfilip.github.io/googlesearch/">
-     <img src="https://jigsaw.w3.org/css-validator/images/vcss" alt="Valid CSS!">
-   </a>
-   ```
-
-   Dodaný odkaz i obrázek CSS validátoru jsem nasadil na všechny stránky.
-
-10. **Citace AI**
-
-    > udelej mi citaci ai i s promptem
-
-    Doplnil jsem citaci GitHub Copilotu a popis jeho využití.
-
-11. **Rozšíření citace o zadání a provedené úpravy**
-
-    > az to je delsi, vsechny prompty, co jsi vse udelal apod
-
-    Rozšířil jsem citaci o přehled provedených úprav a zadání z konverzace.
-
-12. **Doplnění všech promptů místo příkladů**
-
-    > vsechny prompty, ne jen priklady
-
-    Tato část README nyní obsahuje všechna zadání v konverzaci, jejich dodané HTML kódy a související přehled změn.
+Při tvorbě a následných úpravách projektu CS50 Web – Project 0: Search jsem používal GitHub Copilot jako pomoc při návrhu a tvorbě webu, HTML a CSS, řešení chyb a úpravě formuláře. Projekt obsahuje hlavní stránku pro běžné vyhledávání, stránku pro vyhledávání obrázků, pokročilé vyhledávání, formulářovou stránku a navigaci mezi stránkami. Dále byly upraveny styly, přidány HTML a CSS validační odznaky a opraveny upozornění validátoru.
+Přehled promptů a provedených úprav
+Poznámka: Přesné znění promptů z dřívější konverzace, ve které vznikal základ webu, nemám v této konverzaci k dispozici. Její výsledek proto níže popisuji jako shrnutí, nikoli jako doslovný přepis. Následují všechna zadání dostupná v této konverzaci v chronologickém pořadí. Prázdné řádky jsou záměrně vynechány.
+1. Tvorba stylů formuláře — Prompt: „udělej mi css styly na formular a dej je to styles.css“ Provedeno: doplněny styly formulářových polí, popisků, výběrů, tlačítek, rozložení formuláře, patičky a responzivního zobrazení; opraven odkaz na CSS v formular.html.
+2. Odkaz na formulář — Prompt: „a das tam úrosim jesre odkaz, at se z googlu dostanu na ty formulare?“ Provedeno: přidán odkaz na formulář do navigace hlavní stránky.
+3. CSS validační odznak — Prompt: „dej tuto validaci na kazdou stranku a kdyz uz tam nekdew je, nahrad  ji timto“; dodaný kód: `<p><a href="https://gregorfilip.github.io/googlesearch/"><img style="border:0;width:88px;height:31px" src="https://jigsaw.w3.org/css-validator/images/vcss-blue" alt="Ověřit CSS!" /></a></p>`. Provedeno: odznak vložen na všechny HTML stránky.
+4. Chyba přístupnosti — Prompt s hlášením: „The aria-label attribute must not be specified on any div element unless the element has a role value other than caption, code, deletion, emphasis, generic, insertion, paragraph, presentation, strong, subscript, or superscript.“ Uvedený problematický úryvek: `<div class="wordmark" aria-label="Google">`; závěr promptu: „oprav prosím tuto vhybu“. Provedeno: k wordmarkům na hlavní a obrázkové stránce doplněna role img a popisky.
+5. Upozornění na lomítko u prázdného elementu — Prompt s hlášením: „Trailing slash on void elements has no effect and interacts badly with unquoted attribute values.“ Uvedený úryvek obsahoval `<img ... alt="Ověřit CSS!" />`; závěr promptu: „i toto prosim“. Provedeno: odstraněna koncová lomítka z obrázkových elementů.
+6. HTML validace — Prompt: „pridej jeste tuto validaci na html, popripadme existujici timhle nahrad“. V následném upřesnění byla vybrána standardní textová validace W3C. Provedeno: přidány odkazy pro validaci jednotlivých stránek.
+7. Grafický HTML odznak — Prompt: „to obereni htlml ale udelej stejne jako obrazekm u css, a vymen stavajici veci timto + dej ikonky  alicdace ccs i html k sobe“. Provedeno: textový odkaz nahrazen HTML odznakem a HTML/CSS odznaky umístěny vedle sebe.
+8. Výměna HTML obrázku — Prompt: „tento obrazek vymen za ten sta vajici u html vsude“; dodaný kód: `<img src="https://www.w3.org/Icons/valid-html401" alt="Ověřit HTML!" style="border:0;width:88px;height:31px">`. Provedeno: dodaný obrázek použit na všech stránkách a ponechán odkaz na HTML validátor příslušné stránky.
+9. Výměna CSS odznaku — Prompt: „tohle zaaam dej jako validaci na css“; dodaný kód: `<a href="https://jigsaw.w3.org/css-validator/validator?uri=https://gregorfilip.github.io/googlesearch/"><img src="https://jigsaw.w3.org/css-validator/images/vcss" alt="Valid CSS!"></a>`. Provedeno: dodaný CSS odznak a jeho odkaz použity na všech stránkách.
+10. Citace AI — Prompt: „udelej mi citaci ai i s promptem“. Provedeno: přidána citace AI a popis využití asistenta.
+11. Rozšíření citace — Prompt: „az to je delsi, vsechny prompty, co jsi vse udelal apod“. Provedeno: citace rozšířena o zadání a provedené úpravy.
+12. Všechny prompty — Prompt: „vsechny prompty, ne jen priklady“. Provedeno: přepsán přehled tak, aby zahrnoval všechna zadání dostupná v této konverzaci včetně dodaných ukázek.
+13. Úprava formátu citace a doplnění začátku tvorby webu — Prompt: „delej tu citaci jakoby bez mezer, bez linku a pridej tam i to, jak jsem ten web tvoril od zacatku z minu,e konverzace“. Provedeno: citace zhuštěna bez prázdných řádků a Markdown odkazů; doplněno shrnutí tvorby projektu od hlavní stránky a vyhledávacích funkcí po formuláře a navigaci. Přesné původní prompty z dřívější konverzace nelze doslovně uvést, protože nejsou dostupné.
