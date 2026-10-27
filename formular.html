@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Formulářové prvky</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="forms-page">
+  <header class="form-header"><a href="index.html">← Zpět na Google Search</a><a href="advanced.html">Pokročilé vyhledávání</a></header>
+  <main class="form-container">
+    <h1>Formulářové prvky</h1>
+    <p class="intro">Ukázka různých HTML formulářových prvků. Formulář slouží jako demonstrační stránka.</p>
+    <form class="demo-form" action="#" method="get">
+      <fieldset>
+        <legend>Osobní údaje</legend>
+        <div class="form-grid">
+          <div class="field"><label for="jmeno">Jméno</label><input id="jmeno" name="jmeno" type="text" placeholder="Jan Novák"></div>
+          <div class="field"><label for="prezdivka">Přezdívka</label><input id="prezdivka" name="prezdivka" type="text" minlength="2" maxlength="20"></div>
+          <div class="field"><label for="email">E-mail</label><input id="email" name="email" type="email" placeholder="jan@example.com"></div>
+          <div class="field"><label for="heslo">Heslo</label><input id="heslo" name="heslo" type="password" minlength="8"></div>
+          <div class="field"><label for="telefon">Telefon</label><input id="telefon" name="telefon" type="tel" placeholder="+420 123 456 789"></div>
+          <div class="field"><label for="web">Webová stránka</label><input id="web" name="web" type="url" placeholder="https://example.com"></div>
+          <div class="field"><label for="datum">Datum narození</label><input id="datum" name="datum" type="date"></div>
+          <div class="field"><label for="cas">Preferovaný čas</label><input id="cas" name="cas" type="time"></div>
+          <div class="field"><label for="mesic">Oblíbený měsíc</label><input id="mesic" name="mesic" type="month"></div>
+          <div class="field"><label for="barva">Oblíbená barva</label><input id="barva" name="barva" type="color" value="#4285f4"></div>
+        </div>
+      </fieldset>
+      <fieldset>
+        <legend>Výběr možností</legend>
+        <div class="field"><label for="trida">Ročník</label><select id="trida" name="trida"><option value="">Vyberte…</option><option>1. ročník</option><option>2. ročník</option><option>3. ročník</option><option>4. ročník</option></select></div>
+        <p class="field-label">Jaké technologie znáš?</p>
+        <div class="choice-list"><label><input type="checkbox" name="tech" value="html"> HTML</label><label><input type="checkbox" name="tech" value="css"> CSS</label><label><input type="checkbox" name="tech" value="js"> JavaScript</label><label><input type="checkbox" name="tech" value="python"> Python</label></div>
+        <p class="field-label">Jaký typ projektu preferuješ?</p>
+        <div class="choice-list"><label><input type="radio" name="typ" value="web"> Web</label><label><input type="radio" name="typ" value="hra"> Hra</label><label><input type="radio" name="typ" value="aplikace"> Aplikace</label></div>
+        <div class="field range-field"><label for="uroven">Sebehodnocení znalostí (1–10)</label><input id="uroven" name="uroven" type="range" min="1" max="10" value="5"><div class="range-labels"><span>Začátečník</span><span>Pokročilý</span></div></div>
+        <div class="field"><label for="soubor">Nahrát soubor</label><input id="soubor" name="soubor" type="file"></div>
+        <div class="field"><label for="pocet">Počet projektů</label><input id="pocet" name="pocet" type="number" min="0" max="100" value="1"></div>
+      </fieldset>
+      <fieldset>
+        <legend>Názor a zpráva</legend>
+        <div class="field"><label for="tema">Téma zprávy</label><input id="tema" name="tema" type="text" list="temata" placeholder="Začněte psát…"><datalist id="temata"><option value="Webdesign"><option value="Programování"><option value="Škola"><option value="Jiné"></datalist></div>
+        <div class="field"><label for="hodnoceni">Hodnocení stránky</label><select id="hodnoceni" name="hodnoceni"><option>Výborná</option><option>Dobrá</option><option>Průměrná</option><option>Potřebuje zlepšit</option></select></div>
+        <div class="field"><label for="zprava">Text zprávy</label><textarea id="zprava" name="zprava" rows="5" placeholder="Napište svůj názor…"></textarea></div>
+        <label class="consent"><input type="checkbox" name="souhlas" required> Souhlasím s ukázkovými podmínkami.</label>
+        <div class="form-actions"><button type="submit" class="primary-button">Odeslat formulář</button><button type="reset" class="secondary-button">Vymazat</button><button type="button" class="secondary-button" onclick="alert('Toto je pouze demonstrační tlačítko.')">Obyčejné tlačítko</button></div>
+      </fieldset>
+    </form>
+  </main>
+  <footer class="site-footer"><div class="footer-country">Formulářová laboratoř · školní projekt</div><div class="footer-bottom"><div class="footer-group"><a href="https://validator.w3.org/nu/?doc=https%3A%2F%2FYOUR-USERNAME.github.io%2Fgooglesearch%2Fformular.html">Validovat HTML</a><a href="https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2FYOUR-USERNAME.github.io%2Fgooglesearch%2Fstyle.css">Validovat CSS</a></div><div class="footer-group"><a class="citation-link" href="https://github.com/gregorfilip/googlesearch/blob/main/README.md">Citace</a><a href="https://github.com/YOUR-USERNAME">Moje portfolio</a></div></div></footer>
+</body>
+</html>
